@@ -1,0 +1,157 @@
+/*
+Theme Name: Studio Mag Responsive Theme
+Theme URI: http://www.dessign.net/studiomagtheme
+Description: Studio Mag Responsive Theme for WordPress is stylish, customizable, simple, and readable. Perfect for any creative, illustrator or graphic designer. 
+Version: 2.0
+Author: Marios Lublinski
+Author URI: http://www.dessign.net
+Tags: 3 column theme, clean, portfolio
+*/
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+.wp-caption p.wp-caption-text {
+    margin: 0;
+    padding: 0 4px 5px;
+}
+html,body,div { margin: 0; padding: 0; }
+body { font-size: 14px;  font-family: 'Source Sans Pro', sans-serif; background-color: #F9F9F9; color: #666; }
+a { color: #666; text-decoration: none; transition: background 0.3s ease 0s, color 0.3s ease 0s; }
+a:hover { color: #222; }
+img { border: none; }
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+.font_12 { font-size: 12px; }
+.text_center { text-align: center; }
+h1,h2,h3,h4,h5,p { margin: 10px 0; }
+#infscr-loading { DISPLAY: NONE !important; visibility: hidden !important; } /* hide infinite scroll loading image */
+.container { width: 980px; margin: 0 auto; position: relative; }
+::selection {
+	background: #f2664f; 
+	}
+::-moz-selection {
+	background: #f2664f; 
+}
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+/* Header */
+#header { margin-bottom: 25px; }
+.sticky_menu { position: fixed; top: 0; left: 0; width: 100%; z-index: 100; }
+.logo_cont { padding: 20px 0; }
+.logo_cont img { max-width: 100%; height: inherit; }
+.menu_container { padding: 15px 10px; background-color: #fff; width: 960px; margin: 0 auto; }
+.menu_container ul { list-style-type: none; margin: 0; padding: 0; float: left; margin-top: 3px; margin-left: 15px;}
+.menu_container ul li { display: inline-block; margin-left: 35px; font-size: 16px; position: relative; }
+.menu_container ul li:first-child { margin-left: 0; }
+.menu_container ul li a { color: #333; text-decoration: none; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; text-transform: uppercase;   letter-spacing: 2px;}
+.menu_container ul li a:hover { color: #888; text-decoration: none; }
+.menu_container ul li ul { position: absolute; top: 18px; left: 0; float: none; background-color: #fff; border: 1px solid #dfdfdf; z-index: 40; display: none; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);  }
+.menu_container ul li ul li { float: none; width: 140px; margin: 0;  padding: 8px 8px; border-top: 1px solid #eee;  font-size: 14px; }
+.menu_container ul li ul li:first-child { border-top: none; }
+.menu_container ul li ul li a { display: block; }
+.header_social { float: right; }
+.header_social img { display: inline-block; margin-left: 8px; }
+/* Content */
+#slideshow_cont { width: 646px; float: left; margin-right: 21px; margin-bottom: 20px; position: relative; }
+#slideshow { width: 646px; min-height: 342px; }
+.slide_box { display: none; position: absolute; top: 0; left: 0; }
+.slide_box_first { display: block; }
+.slide_box img { display: block; width: 646px; height: 303px; }
+.slide_box iframe { display: block; width: 646px; height: 303px; }
+.slide_box_title { padding: 8px 10px; font-size: 20px; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; text-transform: uppercase; background-color: #fff; height: 23px; }
+.slide_box_title a { color: #222; text-decoration: none; }
+.slide_prev { position: absolute; top: 132px; left: 0; cursor: pointer; z-index: 30; }
+.slide_next { position: absolute; top: 132px; right: 0; cursor: pointer; z-index: 30; }
+.home_box { float: left; width: 313px; background-color: #fff; margin-bottom: 20px; margin-right: 20px; }
+.home_box img, 
+.home_box iframe { width: 313px; height: 196px; }
+.home_box_last { margin-right: 0; }
+.home_box_cont { padding: 5px 5px; text-align: center; }
+.home_box_cont h3 { font-size: 20px; margin: 0px 0 10px; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; text-transform: uppercase; }
+.home_box_cont h3 a { color: #222; text-decoration: none; }
+.home_box_cont h3 a:hover { text-decoration: none; color: #f2664f; }
+.home_box_text .home_box_cont { text-align: center; font-size: 18px; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; background-color: transparent;}
+.archive_title { background-color: #F5F5F5; padding: 10px 8px; margin-bottom: 20px; font-size: 16px; }
+#single_cont { background-color: #fff; padding: 10px 15px; }
+.single_left { width: 645px; float: left; }
+.single_left p { margin-bottom: 15px; font-size: 16px; font-family: 'Source Sans Pro', sans-serif; color: #333; }
+h1.single_title { margin: 0 0 15px; font-size: 23px; font-weight: normal; }
+#commentform input[type=submit] { background-color: #161616; color: #fff; border: 1px solid #6E6E6E; padding: 3px 5px; }
+.next_prev_cont { padding: 25px 0; }
+.next_prev_cont .left { float: left; width: 45%; }
+.next_prev_cont .left a { display: block; background: url('images/post_prev.png') no-repeat; background-position: top left; padding-left: 25px; min-height: 30px; }
+.next_prev_cont .right { float: right; width: 45%; text-align: right; }
+.next_prev_cont .right a { display: block; background: url('images/post_next.png') no-repeat; background-position: top right; padding-right: 25px;  min-height: 30px; }
+/* Sidebar */
+#sidebar { float: right; width: 265px; }
+.side_box { margin-bottom: 25px; }
+.side_box h3.side_title { margin: 0 0 10px; padding: 3px 0;  font-size: 16px; font-weight: 700; }
+.side_box ul { list-style-type: none; margin: 0; padding: 0; }
+.side_box ul li {  padding-bottom: 4px; margin-bottom: 5px;  }
+/* Footer */
+#footer { margin-top: 30px; }
+#footer .container { background-color: #fff; text-align: center; font-size: 14px; }
+.inside_footer { padding: 15px 15px; }

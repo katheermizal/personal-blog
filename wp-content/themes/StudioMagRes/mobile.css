@@ -1,0 +1,61 @@
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	.container { width: 748px; }
+	.sticky_menu { position: static; top: 0; left: 0; width: 100%; z-index: 100; }
+	#menu_container_cont { width: 100%; }
+	.menu_container { width: 728px; }
+	.menu_container ul li { margin-left: 15px; font-size: 14px; }
+	.menu_container ul li:first-child { margin-left: 0; }
+	
+	#slideshow_cont { width: 492px; margin-right: 20px; margin-bottom: 20px; }
+	#slideshow { width: 492px; min-height: 270px; }
+	.slide_box img { width: 492px; height: 231px; }
+	.slide_box iframe { display: block; width: 492px; height: 231px; }	
+	.slide_prev { top: 100px; }
+	.slide_next { top: 100px; }		
+	
+	.home_box { width: 236px; margin-bottom: 20px; margin-right: 20px; }
+	.home_box img, 
+	.home_box iframe { width: 236px; height: 148px; }
+	.home_box_last { margin-right: 0; }	
+	
+	.single_left { width: 510px; }
+	#sidebar { width: 180px; }
+	.single_inside_content img { max-width: 100%; height: inherit; }
+	.single_inside_content iframe { width: 510px; height: 290px; }
+	#commentform textarea { max-width: 95%; }	
+	
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) { 
+	
+	.container { width: 300px; }
+	.sticky_menu { position: static; top: 0; left: 0; width: 100%; z-index: 100; }
+	
+	#menu_container_cont { width: 100%; }
+	.menu_container { width: 280px; }
+	.menu_container ul { float: none; }
+	.menu_container ul li { margin-left: 15px; font-size: 14px; }
+	.menu_container ul li:first-child { margin-left: 0; }
+	.header_social { float: none; margin-top: 15px; }
+	
+	#slideshow_cont { width: 300px; margin-right: 0px; margin-bottom: 20px; float: none; }
+	#slideshow { width: 300px; min-height: 180px; }
+	.slide_box img { width: 300px; /*height: 231px;*/ height: 141px; }
+	.slide_box iframe { display: block; width: 300px; height: 141px; }	
+	.slide_prev { top: 60px; }
+	.slide_next { top: 60px; }	
+	
+	.home_box { width: 236px; margin: 0 auto 20px; float: none; }
+	.home_box img, 
+	.home_box iframe { width: 236px; height: 148px; }
+	.home_box_last { margin-right: auto; }		
+	
+	.single_left { width: 280px; float: none; }
+	#sidebar { width: 280px; margin-top: 25px; float: none; }	
+	.single_inside_content img { max-width: 100%; height: inherit; }
+	.single_inside_content iframe { width: 300px; height: 167px; }
+	#commentform textarea { max-width: 95%; }	
+	
+}
